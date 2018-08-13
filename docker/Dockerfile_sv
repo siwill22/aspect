@@ -3,7 +3,7 @@ FROM dealii/dealii:v8.5.0-gcc-mpi-fulldepscandi-debugrelease
 LABEL maintainer <rene.gassmoeller@mailbox.org>
 
 # Build aspect
-RUN git clone -b obliqe_mor https://github.com/anne-glerum/aspect.git ./aspect && \ 
+RUN git clone https://github.com/geodynamics/aspect.git ./aspect && \ 
     mkdir aspect/build-release && \
     cd aspect/build-release && \
     cmake -DCMAKE_BUILD_TYPE=Release \

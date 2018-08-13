@@ -57,3 +57,7 @@
 
 .idea/
 cmake-build-debug/
+
+cookbooks/MOR
+cookbooks/output*
+MOR*
